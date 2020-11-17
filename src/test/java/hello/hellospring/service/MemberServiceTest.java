@@ -11,8 +11,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MemberServiceTest {
 
     MemberService memberService;
@@ -31,7 +29,7 @@ class MemberServiceTest {
     }
 
     @Test
-    public void 회원가입(){
+    public void 회원가입() throws Exception{
         //given
         Member member = new Member();
         member.setName("hello");
@@ -45,7 +43,7 @@ class MemberServiceTest {
     }
 
     @Test
-    public void 중복_회원_예외(){
+    public void 중복_회원_예외() throws Exception{
         //given
         Member member1 = new Member();
         member1.setName("spring");
